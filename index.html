@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jai Shri Ram</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Jai Shri Ram</h1>
+  <div id="body">
+    <div id="todo">
+        <span class="header">To Achieve</span>
+        <div id="todolist">
+            <ul class="todo">
+
+                <!-- To Do Here -->
+                <li id="workout">
+                    <div class="start" onclick="start('workout')">Start</div>
+                    <span>Workout</span>
+                    <div class="doneb" onclick="done('workout')">Done</div>
+                </li>
+                <li id="running">
+                    <div class="start" onclick="start('running')">Start</div>
+                    <span>Running</span>
+                    <div class="doneb" onclick="done('running')">Done</div>
+                </li>
+                <li id="med">
+                    <div class="start" onclick="start('med')">Start</div>
+                    <span>Meditation</span>
+                    <div class="doneb" onclick="done('med')">Done</div>
+                </li>
+                <li id="study">
+                    <div class="start" onclick="start('study')">Start</div>
+                    <span>Study</span>
+                    <div class="doneb" onclick="done('study')">Done</div>
+                </li>
+                <li id="dropship">
+                    <div class="start" onclick="start('dropship')">Start</div>
+                    <span>Work on Dropshipping</span>
+                    <div class="doneb" onclick="done('dropship')">Done</div>
+                </li>
+                <li id="animation">
+                    <div class="start" onclick="start('animation')">Start</div>
+                    <span>Work on Animation</span>
+                    <div class="doneb" onclick="done('animation')">Done</div>
+                </li>
+
+            </ul>
+            <div id="firstimg">
+                <img src="happyboy.png" />
+            </div>
+        </div>
+    </div>
+    <div id="achieved">
+        <span class="header">Achieved</span>
+        <div id="achievedlist">
+            <ul class="done">
+
+                <!-- Done List here -->
+                <li id="workoutdone">
+                    <div class="doneimg"><img src="check.png" /></div>
+                    <span>Workout</span>
+                    <div class="redo" onclick="redo('workout')">Redo</div>
+                </li>
+                <li id="runningdone">
+                    <div class="doneimg"><img src="check.png" /></div>
+                    <span>Running</span>
+                    <div class="redo" onclick="redo('running')">Redo</div>
+                </li>
+                <li id="meddone">
+                    <div class="doneimg"><img src="check.png" /></div>
+                    <span>Meditation</span>
+                    <div class="redo" onclick="redo('med')">Redo</div>
+                </li>
+                <li id="studydone">
+                    <div class="doneimg"><img src="check.png" /></div>
+                    <span>Studying</span>
+                    <div class="redo" onclick="redo('study')">Redo</div>
+                </li>
+                <li id="dropshipdone">
+                    <div class="doneimg"><img src="check.png" /></div>
+                    <span>Work on Drop Shipping</span>
+                    <div class="redo" onclick="redo('dropship')">Redo</div>
+                </li>
+                <li id="animationdone">
+                    <div class="doneimg"><img src="check.png" /></div>
+                    <span>Work on Animation</span>
+                    <div class="redo" onclick="redo('animation')">Redo</div>
+                </li>
+
+            </ul>
+            <div id="secondimg">
+                <img src="achievedboy.png" />
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <div id="message-to-start">
+            <img id="startimg" src="" />
+            <p><div id="doing"></div><div id="timer"></div></p>
+        </div>
+        <div class="doneb donetimer" id="donetimer" onclick="done()">
+            Done
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Keep at Last of the Body -->
+  <script src="functions.js"></script>
+</body>
+</html>
